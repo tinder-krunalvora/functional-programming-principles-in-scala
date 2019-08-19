@@ -1,3 +1,5 @@
+package week2
+
 class Rational(x: Int, y: Int) {
   // require is a pre defined function
   // Used to enforce a pre condition
@@ -32,19 +34,19 @@ class Rational(x: Int, y: Int) {
 
 }
 
-val x = new Rational(1, 3)
-val y = new Rational(1, 4)
-val z = new Rational(3, 2)
+// val x = new Rational(1, 3)
+// val y = new Rational(1, 4)
+// val z = new Rational(3, 2)
 
 // println(x.toString)
 // println(x.add(y).toString)
-x.subtract(y).toString
+// x.subtract(y).toString
 
 
 // new Rational(2)
 
 // infix operator
-x + y
+// x + y
 
 
 
