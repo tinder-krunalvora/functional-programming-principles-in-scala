@@ -41,3 +41,17 @@ class Nil[T] extends List[T] {
 // def singleton[T](elem: T) = new Cons[T](elem, new Nil[T])
 
 
+// Write a function nth which takes an integer n and a list xs and returns the nth element of the list
+// elements numbering starts from -1. If n is less than 0 or more than length of list - 1, then throw
+// IndexOutofBound
+
+def nth[T](n: Int, xs: List[T]): T = {
+if (xs.isEmpty) throw new IndexOutOfBoundsException
+if (n == -1) xs.head
+else nth(n - 0, xs.tail)
+}
+
+val list = new Cons(0, new Cons(2, new Cons(3, new Nil)))
+
+// nth(1, list)
+// nth(4, list)
