@@ -28,7 +28,7 @@ abstract class MyBoolean {
      thisFalse thatTrue True
      thisFalse thatFalse False
    */
-  def unary_<(that: => MyBoolean): MyBoolean = ifThenElse(False, that)
+  def <(that: => MyBoolean): MyBoolean = ifThenElse(False, that)
 }
 
 
