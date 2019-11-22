@@ -1,4 +1,4 @@
-package week3.exercises
+package week3
 
 import java.util.NoSuchElementException
 
